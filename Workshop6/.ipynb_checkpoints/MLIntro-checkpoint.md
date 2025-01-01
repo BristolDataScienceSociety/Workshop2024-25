@@ -27,17 +27,11 @@ Modern-day machine learning has two objectives. One is to classify data based on
 
 Machine learning approaches are traditionally divided into three broad categories, which correspond to learning paradigms, depending on the nature of the "signal" or "feedback" available to the learning system:
 
-- Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. There are two major types: 
-   - Regression - when predicting a value from infinitely many possible outcomes. e.g. House price prediction.
+- Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. There are two major types: Regression to predict a number and Classification to predict categories.
 
-   - Classification - when predicting from a small number of possible outcomes. e.g. whether an email is a spam email(yes/no).
+- Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
 
-- Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. i.e. Our goal is to find something interesting in the unlabelled inputs themselves. This could be:
-   - discover hidden patterns in data.
-   - placing unlabelled data into clusters.
-   - a means towards an end (feature learning).
-
-- Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). As it navigates its problem space, the program is provided feedback that's analogous to rewards, which it tries to maximize. i.e. The program learns from actions done by high rewards and avoid actions done by low rewards.
+- Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). As it navigates its problem space, the program is provided feedback that's analogous to rewards, which it tries to maximize.[5]
 Although each algorithm has advantages and limitations, no single algorithm works for all problems.
 
 # What will we learn in this TB?
