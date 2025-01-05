@@ -1,9 +1,4 @@
-# What is Machine Learning? (total ~20 mins to read)
-
-🔴 **TODO**
-- a brief introduction explain what is machine learning and what we can do by using machine learning methods, can use text + images to illustrate and give an intuition.
-- may include history, challenges
-- relation to AI and DL (could refer to wikipedia), use a Venn graph
+# What is Machine Learning?
 
 Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without explicit instructions. Advances in the field of deep learning have allowed neural networks to surpass many previous approaches in performance.
 
@@ -29,20 +24,19 @@ Machine learning approaches are traditionally divided into three broad categorie
 
 - Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. There are two major types: 
    - Regression - when predicting a value from infinitely many possible outcomes. e.g. House price prediction.
-
-   - Classification - when predicting from a small number of possible outcomes. e.g. whether an email is a spam email(yes/no).
+   - Classification - when predicting from a small number of possible outcomes. e.g. whether an email is a spam email (yes/no).
 
 - Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. i.e. Our goal is to find something interesting in the unlabelled inputs themselves. This could be:
-   - discover hidden patterns in data.
-   - placing unlabelled data into clusters.
-   - a means towards an end (feature learning).
+   - Discovering hidden patterns in data.
+   - Placing unlabelled data into clusters.
+   - A means towards an end (feature learning).
 
 - Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). As it navigates its problem space, the program is provided feedback that's analogous to rewards, which it tries to maximize. i.e. The program learns from actions done by high rewards and avoid actions done by low rewards.
 Although each algorithm has advantages and limitations, no single algorithm works for all problems.
 
 # What will we learn in this TB?
 
-- Workshop 6: loss function, linear regression, generalised linear model (extra)
+- Workshop 6: loss function and linear regression
 - Workshop 7: decision tree and random forest
 - Workshop 8: support vector machine (SVM) and principal component analysis (PCA)
 - Workshop 9: k-neighbours and unsupervised learning algorithms (i.e. k-means)
@@ -52,7 +46,7 @@ Although each algorithm has advantages and limitations, no single algorithm work
 
 1. Python Basics
 
-   All the Python knowledge needed is available in previous workshop materials.
+   All the Python knowledge needed for machine learning is available in previous workshop materials.
 
    - Workshop 1: variables, data types, operators, control flows, functions and modules
    - Workshop 2: data structures, object-oriented programming (OOP)
