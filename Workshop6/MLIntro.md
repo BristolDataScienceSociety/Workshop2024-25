@@ -6,41 +6,60 @@ The following graph shows relationship between three key concepts: Artificial In
 
 <img src="img/AI_hierarchy.png" alt="AI hierarchy" height=400px>
 
-## History
+(image from [wikipedia](https://en.wikipedia.org/wiki/Machine_learning))
 
-The term machine learning was coined in 1959 by Arthur Samuel, an IBM employee and pioneer in the field of computer gaming and artificial intelligence. The synonym self-teaching computers was also used in this time period.
 
-The earliest machine learning model was introduced in the 1950s when Arthur Samuel invented a program that calculated the winning chance in checkers for each side.
+## Classifications
 
-By the early 1960s, an experimental "learning machine" with punched tape memory, called Cybertron, had been developed by Raytheon Company to analyze sonar signals, electrocardiograms, and speech patterns using rudimentary reinforcement learning.
+### 1. Classification by Signal
+Machine learning methods can be categorized based on the type of signal they receive during training:
 
-Tom M. Mitchell provided a widely quoted, more formal definition of the algorithms studied in the machine learning field: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E."
+![Classification by signal](img/ml_ctg_by_signal.png)
+(image from [Geeks for Geeks](https://www.geeksforgeeks.org/supervised-vs-reinforcement-vs-unsupervised/))
 
-Modern-day machine learning has two objectives. One is to classify data based on models which have been developed; the other purpose is to make predictions for future outcomes based on these models.
+#### 1.1 Supervised Learning
+- **Definition**: The model is trained on labeled data, where each input is paired with a corresponding output.
+- **Examples**: Regression, classification tasks.
+- **Use Case**: Predicting house prices, spam email detection.
 
-## Approaches
+#### 1.2 Unsupervised Learning
+- **Definition**: The model is trained on unlabeled data, aiming to find patterns or structures in the input.
+- **Examples**: Clustering, dimensionality reduction.
+- **Use Case**: Customer segmentation, data compression.
 
-Machine learning approaches are traditionally divided into three broad categories, which correspond to learning paradigms, depending on the nature of the "signal" or "feedback" available to the learning system:
+#### 1.3 Reinforcement Learning
+- **Definition**: The model learns by interacting with an environment, receiving rewards or penalties based on its actions.
+- **Examples**: Q-learning, Deep Q-Networks (DQN).
+- **Use Case**: Game playing (e.g., AlphaGo), robotic control.
 
-- Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. There are two major types: 
-   - Regression - when predicting a value from infinitely many possible outcomes. e.g. House price prediction.
-   - Classification - when predicting from a small number of possible outcomes. e.g. whether an email is a spam email (yes/no).
 
-- Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. i.e. Our goal is to find something interesting in the unlabelled inputs themselves. This could be:
-   - Discovering hidden patterns in data.
-   - Placing unlabelled data into clusters.
-   - A means towards an end (feature learning).
+### 2. Classification by Model Type
+Machine learning models can also be classified based on whether they make assumptions about the data's distribution or complexity:
 
-- Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). As it navigates its problem space, the program is provided feedback that's analogous to rewards, which it tries to maximize. i.e. The program learns from actions done by high rewards and avoid actions done by low rewards.
-Although each algorithm has advantages and limitations, no single algorithm works for all problems.
+#### 2.1 Parametric Learning
+- **Definition**: Assumes a fixed form (or parameters) for the model. The number of parameters does not grow with the size of the training data.
+- **Examples**: Linear regression, Logistic regression, Naive Bayes.
+- **Advantages**: 
+  - Simpler to implement and compute.
+  - Requires less data to train.
+- **Limitations**: Less flexible, may not capture complex patterns.
+
+#### 2.2 Non-Parametric Learning
+- **Definition**: Does not assume a fixed form for the model. The complexity grows with the training data.
+- **Examples**: k-Nearest Neighbors (kNN), Decision Trees, Support Vector Machines (SVMs), Neural Networks.
+- **Advantages**: 
+  - Flexible, can capture complex patterns.
+  - Performs well with large datasets.
+- **Limitations**: Requires more data and computational resources.
+
 
 # What will we learn in this TB?
 
-- Workshop 6: loss function and linear regression
-- Workshop 7: decision tree and random forest
-- Workshop 8: support vector machine (SVM) and principal component analysis (PCA)
-- Workshop 9: k-neighbours and unsupervised learning algorithms (i.e. k-means)
-- Workshop 10: multilayer perceptron (MLP)
+- Workshop 6: Intro to Machine Learning, Linear Regression, Logistic Regression
+- Workshop 7: Decision Tree, Random Forest
+- Workshop 8: Support Vector Machine (SVM), Principal Component Analysis (PCA), Data Preprocessing
+- Workshop 9: K-Nearest Neighbours (KNN), K-Means, Gaussian Mixture Models (GMM)
+- Workshop 10: Intro to deep learning and neural networks, multilayer perceptron (MLP)
 
 # Prerequisites
 
@@ -50,16 +69,12 @@ Although each algorithm has advantages and limitations, no single algorithm work
 
    - Workshop 1: variables, data types, operators, control flows, functions and modules
    - Workshop 2: data structures, object-oriented programming (OOP)
-   - Workshop 3: Numpy (comprehensive functionalities for scientific computing)
-   - Workshop 4: Pandas (data analysis)
+   - Workshop 3: numpy (comprehensive functionalities for scientific computing)
+   - Workshop 4: pandas (data analysis)
    - Workshop 5: matplotlib.pyplot (data visualisation)
 
    The last three workshops are important as you can find the usage of them in everywhere of machine learning, make sure you fully understand contents in these materials.
 
 2. Jupyter Notebook
 
-   The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.
-
-   You can simply see it as a combination of Markdown and Python.
-
-   You can open Jupyter Notebook files (.ipynb) in github if you did not installed the software, but with the software you can run Python code in these files by yourself. You can follow the instructions to [install Jupyter Notebook](https://jupyter.org/install#jupyter-notebook).
+   You can use Jupyter by [Google Colab](https://colab.research.google.com/) or Installing [Anaconda](https://www.anaconda.com/products/distribution#download-section)/[Miniconda](https://docs.conda.io/en/latest/miniconda.html).
